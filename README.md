@@ -36,6 +36,3 @@
     </a>
 
 </div>
-
-![Snake animation](https://raw.githubusercontent.com/jhonnyCBA/jhonnyCBA/main/github-contribution-grid-snake.svg)
-

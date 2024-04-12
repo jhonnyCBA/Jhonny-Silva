@@ -21,7 +21,7 @@
         <img align="center" alt="BOM-Spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
         <img align="center" alt="BOM-MySQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
     </div>
-</div>
+</div></br>
 
 - 🌱 Atualmente estou aprendendo node JS e Java
 - 📚 Atualmente estou estudando Análise desenvolvimento de Sistemas

@@ -1,25 +1,22 @@
-# Nome da Actions:  
+# Nome da Action:
 name: Snake Game
 
-# Controlador do tempo que sera feito a atualização dos arquivos.
+# Controlador do tempo para atualização dos arquivos.
 on:
   schedule:
-      # Será atualizado a cada 5 horas.
+    # Será atualizado a cada 5 horas.
     - cron: "0 */5 * * *"
-
-# Permite executar na na lista de Actions (utilizado para testes de build).
-  workflow_dispatch:
+  workflow_dispatch: # Permite execução na lista de Actions (utilizado para testes de build).
 
 # Regras
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
+      # Checks repo under $GITHUB_WORKSHOP, so your job can access it
       - uses: actions/checkout@v2
 
-    # Repositorio que será utilizado para gerar os arquivos.
+      # Repositório que será utilizado para gerar os arquivos.
       - uses: Platane/snk@master
         id: snake-gif
         with:
@@ -39,7 +36,7 @@ jobs:
 
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
-          # the output branch we mentioned above
+          # O branch de saída mencionado acima
           target_branch: output
           build_dir: dist
         env:
